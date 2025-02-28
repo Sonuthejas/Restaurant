@@ -21,7 +21,9 @@
         color: #f39c12 !important;
         transform: scale(1.1);
     }
-    
+    .mb-4{
+        color: black;
+    }
     /* Animated Brand */
     .animate-brand {
         animation: fadeIn 1.5s ease-in-out;
@@ -42,6 +44,9 @@
             font-size: 2rem;
             font-weight: bold;
             margin-bottom: 20px;
+        }
+        p{
+            color: black;
         }
 
         footer i {
@@ -91,6 +96,9 @@
             overflow: hidden;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             height: 100%;
+        }
+        .visit{
+            color: white;
         }
         .card-body {
             display: flex;
@@ -256,52 +264,583 @@ h5{
             .room-card img, .food-img { height: 150px; }
             .order-summary { font-size: 14px; }
         }
+        body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #2c3e50;
+}
+h2{
+    color: white;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+.parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .room-section {
+            background-image: url('./background1.jpg');
+        }
+
+        .menu-section {
+            background-image: url('./background2.jpg');
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .about-icon i {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-icon:hover i {
+            transform: scale(1.2);
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .room-section {
+            background-image: url('./background1.jpg');
+        }
+
+        .menu-section {
+            background-image: url('./background2.jpg');
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .about-icon i {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-icon:hover i {
+            transform: scale(1.2);
+        }
+        .equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-height .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.equal-height .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-us .about-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Image Styling */
+.about-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Feature Boxes */
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Equal Height for Review Cards */
+.review-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px; /* Adjust as needed */
+}
+.parallaxes {
+        background-image: url('/image13.jpg'); /* Background Image */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px; /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    /* Animated Border for Google Map */
+    .map-container {
+        position: relative;
+        padding: 10px; /* Space for border effect */
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .map-container::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 10px;
+        border: 4px solid transparent;
+        animation: borderAnimation 2s linear infinite;
+    }
+
+    @keyframes borderAnimation {
+        0% { border-color: #ff5733; }
+        50% { border-color: #33ff57; }
+        100% { border-color: #ff5733; }
+    }
+
+    /* Responsive Fix */
+    @media (max-width: 768px) {
+        .parallaxes {
+            background-attachment: scroll; /* Disable parallax on mobile */
+            height: 250px; /* Adjust height */
+            font-size: 1.5rem; /* Reduce text size */
+            padding: 10px;
+        }
+    }
+    /* Fade-in Animation */
+      /* Fade-in Animation */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInEffect 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeInEffect {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Footer Styling */
+    .footer-animate {
+        background-color: black;
+        color: white;
+        padding: 40px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* White Text for Paragraph */
+    .footer-animate p {
+        color: white;
+    }
+
+    /* Quick Links - White Color & No Underline */
+    .quick-links ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .quick-links a {
+        color: white !important;
+        text-decoration: none !important;
+        display: inline-block;
+        padding: 3px 0;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .quick-links a:hover {
+        color: #f39c12; /* Golden hover effect */
+    }
+
+    /* Social Icons Hover Effect */
+    .social-icon {
+        color: white;
+        transition: transform 0.3s ease, color 0.3s ease-in-out;
+    }
+
+    .social-icon:hover {
+        color: #ff5733; /* Change color on hover */
+        transform: scale(1.2); /* Slight pop-up effect */
+    }
+
+    /* Footer Floating Glow Effect */
+    .footer-animate::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.2);
+        filter: blur(50px);
+        animation: floatingGlow 6s linear infinite;
+    }
+
+    @keyframes floatingGlow {
+        0% { transform: translateX(-50%) translateY(0px); }
+        50% { transform: translateX(-50%) translateY(30px); }
+        100% { transform: translateX(-50%) translateY(0px); }
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 768px) {
+        .footer-animate {
+            text-align: center;
+        }
+
+        .social-icon {
+            font-size: 1.8rem;
+        }
+    }
+    .s{
+        color: white;
+    }
+      /* Card Hover Effects */
+      .card {
+        border: 2px solid #007bff; /* Blue border */
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+    }
+
+    /* Smooth Fade-in Animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.6s ease-in-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .food-img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    /* Navbar Background & Hover Effects */
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.8);
+    transition: background 0.3s ease-in-out;
+}
+
+.custom-navbar:hover {
+    background: rgba(0, 0, 0, 1);
+}
+
+/* Navbar Brand Hover Effect */
+.logo-animate {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-animate:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Links Hover & Active Effects */
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background: red;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Dropdown Fade-In Effect */
+.fade-in-dropdown {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-item.dropdown:hover .fade-in-dropdown {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Left-to-Right Scroll Animation */
+[data-aos="fade-left"] {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Right-to-Left Scroll Animation */
+[data-aos="fade-right"] {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+[data-aos="fade-right"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+h1{
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Similar to navbar height */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: url('https://source.unsplash.com/1600x900/?lake,parallax') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax Effect */
+}
+
+/* Full Border with Color Animation */
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid;  /* Ensuring the top border */
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-left: 5px solid;
+    animation: borderColorChange 3s infinite linear;
+    box-sizing: border-box;
+}
+
+/* Parallax Overlay Effect */
+.jumbotron::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark Overlay */
+}
+
+/* Loading Text Effect */
+.loading-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff5733, #ffcc33, #33ff57, #3399ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textColorChange 3s infinite linear;
+    position: relative;
+    z-index: 1;
+}
+
+/* Dots Animation */
+.dots::after {
+    content: "";
+    display: inline-block;
+    animation: dotsAnimation 1.5s infinite;
+}
+
+@keyframes dotsAnimation {
+    0%   { content: ""; }
+    33%  { content: "."; }
+    66%  { content: ".."; }
+    100% { content: "..."; }
+}
+
+/* Border Color Animation */
+@keyframes borderColorChange {
+    0%   { border-color: #ff5733; }
+    25%  { border-color: #ffcc33; }
+    50%  { border-color: #33ff57; }
+    75%  { border-color: #3399ff; }
+    100% { border-color: #ff5733; }
+}
+
+/* Responsive Font Size */
+@media (max-width: 768px) {
+    .loading-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-text {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+        
 
     </style>
 </head>
 <body>
     <!-- Navbar -->
     
-    
-    <nav class="navbar navbar-expand-lg fixed-top shadow">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="fas fa-utensils"></i> Jubilee Restaurant
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#home"><i class="fas fa-home"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#menu"><i class="fas fa-utensils"></i> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#feedback"><i class="fas fa-star"></i> Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#location"><i class="fas fa-map-marker-alt"></i> Location</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
-                    <!-- Account Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
-                            <i class="fas fa-user-circle"></i> Account
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                    <i class="fas fa-sign-in-alt"></i> Login
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
-                                    <i class="fas fa-user"></i> Register
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": { "value": 100 },
+            "size": { "value": 3 },
+            "move": { "speed": 2 }
+        }
+    });
+</script>
 
+   <!-- Add AOS CSS for Animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<nav class="navbar navbar-expand-lg fixed-top shadow custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold logo-animate" href="#">
+            <i class="fas fa-utensils"></i> Jubilee Restaurant
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#menu"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#feedback"><i class="fas fa-star"></i> Feedback</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#location"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+                <!-- Account Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-circle"></i> Account
+                    </a>
+                    <ul class="dropdown-menu fade-in-dropdown">
+                        <li>
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                                <i class="fas fa-user"></i> Register
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<!-- Add AOS JS for Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        easing: "ease-in-out", // Smooth effect
+        once: true, // Run animation only once
+    });
+</script>
+
+
+<div class="jumbotron">
+    <h1 class="loading-text">Welcome to Jubilee Restaurant <span class="dots"></span></h1>
+</div>
     <!-- Coffee Carousel -->
     <div id="coffeeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-inner">
@@ -338,174 +877,294 @@ h5{
 <!-- Add this inside your <head> section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Available Rooms</h2>
+    <div class="container mt-5 parallax room-section">
+        <h2 class="text-center mb-4 fade-in visit">Available Rooms</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card room-card h-100">
-                    <img src="./image10.jpg" class="card-img-top" alt="Room">
-                    <div class="card-body">
+            <!-- Deluxe Room -->
+            <div class="col-md-4 fade-in">
+                <div class="card h-100">
+                    <img src="./image10.jpg" class="card-img-top" alt="Deluxe Room">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Deluxe Room</h5>
                         <p class="card-text">Capacity: 10 People</p>
                         <p class="card-text">Price: 1200Rs per hour</p>
-                        <a href="#" class="btn btn-primary w-100 mt-auto">Book Now</a>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card room-card h-100">
-                    <img src="./image11.jpg" class="card-img-top" alt="Room">
-                    <div class="card-body">
+    
+            <!-- VIP Lounge -->
+            <div class="col-md-4 fade-in">
+                <div class="card h-100">
+                    <img src="./image11.jpg" class="card-img-top" alt="VIP Lounge">
+                    <div class="card-body text-center">
                         <h5 class="card-title">VIP Lounge</h5>
                         <p class="card-text">Capacity: 15 People</p>
                         <p class="card-text">Price: 1500Rs per hour</p>
-                        <a href="#" class="btn btn-primary w-100 mt-auto">Book Now</a>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card room-card h-100">
-                    <img src="./image12.jpg" class="card-img-top" alt="Room">
-                    <div class="card-body">
+    
+            <!-- Private Dining -->
+            <div class="col-md-4 fade-in">
+                <div class="card h-100">
+                    <img src="./image12.jpg" class="card-img-top" alt="Private Dining">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Private Dining</h5>
                         <p class="card-text">Capacity: 6 People</p>
                         <p class="card-text">Price: 1600Rs per hour</p>
-                        <a href="#" class="btn btn-primary w-100 mt-auto">Book Now</a>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Family Suite -->
+            <div class="col-md-4 fade-in mt-4">
+                <div class="card h-100">
+                    <img src="./image15.jpg" class="card-img-top" alt="Family Suite">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Family Suite</h5>
+                        <p class="card-text">Capacity: 20 People</p>
+                        <p class="card-text">Price: 1800Rs per hour</p>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Rooftop Dining -->
+            <div class="col-md-4 fade-in mt-4">
+                <div class="card h-100">
+                    <img src="./image16.jpg" class="card-img-top" alt="Rooftop Dining">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rooftop Dining</h5>
+                        <p class="card-text">Capacity: 25 People</p>
+                        <p class="card-text">Price: 2000Rs per hour</p>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Conference Hall -->
+            <div class="col-md-4 fade-in mt-4">
+                <div class="card h-100">
+                    <img src="./image17.jpg" class="card-img-top" alt="Conference Hall">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Conference Hall</h5>
+                        <p class="card-text">Capacity: 50 People</p>
+                        <p class="card-text">Price: 2500Rs per hour</p>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    </div>
-    <section id="menu" class="py-5">
+    <section id="menu" class="py-5 parallax menu-section">
         <div class="container">
-            <h2 class="text-center">Our Food Selection</h2>
+            <h2 class="text-center fade-in">Our Food Selection</h2>
             <form action="" method="POST">
                 <div class="row">
-                    <!-- Food Items -->
-                    <div class="col-md-3">
+                    <!-- Pizza -->
+                    <div class="col-md-3 fade-in">
                         <div class="card text-center">
                             <img src="./image6.jpg" class="food-img card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Pizza</h5>
                                 <p class="card-text">Cheesy & delicious.</p>
-                                <p class="price"> 130 RS</p>
+                                <p class="price">130 RS</p>
                                 <label>Quantity:</label>
                                 <input type="number" name="pizza_qty" min="0" class="form-control" value="0">
                             </div>
                         </div>
                     </div>
     
-                    <div class="col-md-3">
+                    <!-- Burger -->
+                    <div class="col-md-3 fade-in">
                         <div class="card text-center">
                             <img src="./image7.jpg" class="food-img card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Burger</h5>
                                 <p class="card-text">Juicy and flavorful.</p>
-                                <p class="price"> 100 RS</p>
+                                <p class="price">100 RS</p>
                                 <label>Quantity:</label>
                                 <input type="number" name="burger_qty" min="0" class="form-control" value="0">
                             </div>
                         </div>
                     </div>
     
-                    <div class="col-md-3">
+                    <!-- Pasta -->
+                    <div class="col-md-3 fade-in">
                         <div class="card text-center">
                             <img src="./image8.jpg" class="food-img card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Pasta</h5>
                                 <p class="card-text">Rich & creamy sauce.</p>
-                                <p class="price"> 80 RS</p>
+                                <p class="price">80 RS</p>
                                 <label>Quantity:</label>
                                 <input type="number" name="pasta_qty" min="0" class="form-control" value="0">
                             </div>
                         </div>
                     </div>
     
-                    <div class="col-md-3">
+                    <!-- Salad -->
+                    <div class="col-md-3 fade-in">
                         <div class="card text-center">
                             <img src="./image9.jpg" class="food-img card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Salad</h5>
                                 <p class="card-text">Fresh & healthy.</p>
-                                <p class="price"> 50 RS</p>
+                                <p class="price">50 RS</p>
                                 <label>Quantity:</label>
                                 <input type="number" name="salad_qty" min="0" class="form-control" value="0">
                             </div>
                         </div>
                     </div>
+    
+                    <!-- Sandwich -->
+                    <div class="col-md-3 fade-in mt-4">
+                        <div class="card text-center">
+                            <img src="./image18.jpg" class="food-img card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Sandwich</h5>
+                                <p class="card-text">Crispy & fresh.</p>
+                                <p class="price">60 RS</p>
+                                <label>Quantity:</label>
+                                <input type="number" name="sandwich_qty" min="0" class="form-control" value="0">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- French Fries -->
+                    <div class="col-md-3 fade-in mt-4">
+                        <div class="card text-center">
+                            <img src="./image19.jpg" class="food-img card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">French Fries</h5>
+                                <p class="card-text">Crispy & golden.</p>
+                                <p class="price">70 RS</p>
+                                <label>Quantity:</label>
+                                <input type="number" name="fries_qty" min="0" class="form-control" value="0">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Ice Cream -->
+                    <div class="col-md-3 fade-in mt-4">
+                        <div class="card text-center">
+                            <img src="./image20.jpg" class="food-img card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Ice Cream</h5>
+                                <p class="card-text">Cool & creamy.</p>
+                                <p class="price">50 RS</p>
+                                <label>Quantity:</label>
+                                <input type="number" name="icecream_qty" min="0" class="form-control" value="0">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Coffee -->
+                    <div class="col-md-3 fade-in mt-4">
+                        <div class="card text-center">
+                            <img src="./image21.jpg" class="food-img card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Coffee</h5>
+                                <p class="card-text">Hot & energizing.</p>
+                                <p class="price">40 RS</p>
+                                <label>Quantity:</label>
+                                <input type="number" name="coffee_qty" min="0" class="form-control" value="0">
+                            </div>
+                        </div>
+                    </div>
                 </div>
     
-                <!-- Order Summary -->
-                <div class="mt-4 order-summary text-center">
+                <div class="mt-4 text-center">
                     <h4>Order Summary</h4>
-                    <p>Select quantities above and click "Place Order" to proceed.</p>
-                    <button type="/" class="btn btn-success">
+                    <button type="submit" class="btn btn-success">
                         <i class="fas fa-shopping-cart"></i> Place Order
                     </button>
                 </div>
-                
             </form>
         </div>
     </section>
 
-    <section id="about" class="text-center">
+    <section id="about" class="text-center py-5">
         <div class="container">
-            <div class="about-content">
-                <h2 class="mb-4">About Us</h2>
-                <p class="lead">
-                    Welcome to <strong>Food Haven</strong> – where luxury meets flavor! Enjoy a comfortable stay in our beautifully designed rooms and treat yourself to a delightful culinary experience with our expertly crafted dishes.
-                </p>
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <img src="./image14.jpg" class="img-fluid rounded shadow-lg" alt="About Us">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h4 class="mt-3"><i class="fas fa-users text-primary"></i> Who We Are</h4>
+                    <p>We are dedicated to providing top-notch services with a strong focus on quality and customer satisfaction.</p>
     
-                <div class="row mt-5">
-                    <div class="col-md-4">
-                        <div class="about-icon">
-                            <i class="fas fa-bed fa-3x text-primary"></i>
-                        </div>
-                        <h4 class="mt-3">Luxury Rooms</h4>
-                        <p>Unwind in spacious, elegantly furnished rooms equipped with modern amenities for ultimate relaxation.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-icon">
-                            <i class="fas fa-utensils fa-3x text-warning"></i>
-                        </div>
-                        <h4 class="mt-3">Gourmet Cuisine</h4>
-                        <p>Indulge in a wide selection of delicious dishes, prepared using fresh, high-quality ingredients.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-icon">
-                            <i class="fas fa-coffee fa-3x text-brown"></i>
-                        </div>
-                        <h4 class="mt-3">Cozy Dining Experience</h4>
-                        <p>Enjoy your meals in a warm, inviting ambiance designed for a memorable dining experience.</p>
+                    <h4 class="mt-3"><i class="fas fa-bullseye text-success"></i> Our Vision</h4>
+                    <p>To be a leading provider in our industry, continuously innovating to meet customer needs.</p>
+    
+                    <h4 class="mt-3"><i class="fas fa-handshake text-warning"></i> Our Commitment</h4>
+                    <p>Ensuring excellence through integrity, teamwork, and passion.</p>
+    
+                    <h4 class="mt-3"><i class="fas fa-lightbulb text-info"></i> Our Values</h4>
+                    <p>Customer-centric approach, innovation, and sustainability drive our business forward.</p>
+                </div>
+            </div>
+    
+            <h3 class="mt-5 text-center">Why Choose Us?</h3>
+            <div class="row mt-4 text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-utensils fa-3x text-primary"></i>
+                    <h5 class="mt-3">Delicious Cuisine</h5>
+                    <p>Experience a variety of flavors crafted by expert chefs.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-concierge-bell fa-3x text-success"></i>
+                    <h5 class="mt-3">Excellent Service</h5>
+                    <p>Our staff ensures top-notch hospitality and comfort.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-star fa-3x text-warning"></i>
+                    <h5 class="mt-3">High Quality</h5>
+                    <p>We use only premium ingredients for every dish.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-4 text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-wifi fa-3x text-info"></i>
+                    <h5 class="mt-3">Free Wi-Fi</h5>
+                    <p>Stay connected while enjoying your meal.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-chair fa-3x text-danger"></i>
+                    <h5 class="mt-3">Cozy Ambiance</h5>
+                    <p>Relax in a warm and stylish environment.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-parking fa-3x text-secondary"></i>
+                    <h5 class="mt-3">Ample Parking</h5>
+                    <p>Convenient parking space for all guests.</p>
+                </div>
+            </div>
+    
+            <h3 class="mt-5">What Our Customers Say</h3>
+            <div class="row equal-height mt-4">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <p><em>"Absolutely loved the ambiance and food! The private rooms were perfect for our family gathering."</em></p>
+                        <h6>- Priya S.</h6>
                     </div>
                 </div>
-    
-                <div class="row mt-5">
-                    <div class="col-md-4">
-                        <div class="about-icon">
-                            <i class="fas fa-spa fa-3x text-success"></i>
-                        </div>
-                        <h4 class="mt-3">Relaxing Stay</h4>
-                        <p>Enjoy premium comfort with plush bedding, scenic views, and personalized service.</p>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <p><em>"One of the best dining experiences I’ve ever had! The service was excellent and the dishes were divine."</em></p>
+                        <h6>- Arjun K.</h6>
                     </div>
-                    <div class="col-md-4">
-                        <div class="about-icon">
-                            <i class="fas fa-glass-cheers fa-3x text-danger"></i>
-                        </div>
-                        <h4 class="mt-3">Fine Dining & Drinks</h4>
-                        <p>Pair your meals with a selection of fine wines, refreshing beverages, and signature cocktails.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-icon">
-                            <i class="fas fa-concierge-bell fa-3x text-info"></i>
-                        </div>
-                        <h4 class="mt-3">Exceptional Service</h4>
-                        <p>Our friendly staff is dedicated to ensuring your stay and dining experience are unforgettable.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <p><em>"Food Haven exceeded my expectations! Great atmosphere, friendly staff, and delicious food."</em></p>
+                        <h6>- Riya M.</h6>
                     </div>
                 </div>
             </div>
@@ -513,37 +1172,48 @@ h5{
     </section>
     
     
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 
     <section id="contact" class="container py-5 text-center">
         <h2>Find Us</h2>
-        <p>Visit our restaurant at the location below:</p>
+        <p class="visit">Visit our restaurant at the location below:</p>
     
-        <!-- Restaurant Image -->
-        <img src="/image13.jpg" alt="Jubliee Restaurant" class="img-fluid mb-3" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <!-- Parallax Effect Section -->
+        <div class="parallaxes">
+            <h2>Jubliee Restaurant - Visit Us!</h2>
+        </div>
     
-        <!-- Google Maps Embed -->
-        <div class="ratio ratio-16x9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.8626690891327!2d76.95697827506058!3d8.524139693850748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbd6a9a1ef2d%3A0x69a8a62a5395b4d9!2sThiruvananthapuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1711556789012!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        <!-- Animated Border Around Google Maps -->
+        <div class="map-container mt-3">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.8626690891327!2d76.95697827506058!3d8.524139693850748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbd6a9a1ef2d%3A0x69a8a62a5395b4d9!2sThiruvananthapuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1711556789012!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </section>
     
-    <footer class="text-light py-4 footer-animate" style="background-color: black;">
+    
+    <footer class="text-light py-4 footer-animate">
         <div class="container">
             <div class="row text-center text-md-start">
-                <!-- About Section -->
+                <!-- About Section with More Content -->
                 <div class="col-md-4 mb-3 fade-in">
                     <h5>About Us</h5>
-                    <p>Welcome to Jubliee, where we serve delicious food with love and passion. Come and enjoy our specialties!</p>
+                    <p>Welcome to <strong>Jubliee Restaurant</strong>, where we blend exquisite flavors with a cozy ambiance.</p>
+                    <p>We are dedicated to providing our guests with an unforgettable dining experience, featuring fresh ingredients, innovative recipes, and exceptional service.</p>
+                    <p>Come visit us and indulge in the best culinary delights. Whether you're here for a casual meal or a special celebration, we promise a memorable experience.</p>
                 </div>
     
-                <!-- Quick Links (Centered on small screens) -->
+                <!-- Quick Links (Now Properly Aligned & Styled) -->
                 <div class="col-md-4 mb-3 fade-in quick-links">
                     <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">Home</a></li>
-                        <li><a href="#" class="text-light">Menu</a></li>
-                        <li><a href="#" class="text-light">Reservations</a></li>
-                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
     
